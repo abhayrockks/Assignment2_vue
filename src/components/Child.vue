@@ -10,8 +10,15 @@ export default {
   name: "child",
   props: {
     label: String
-  }
-  //   methods: {
+  },
+    methods: {
+    togglelable(){
+
+    },
+    callback(){
+
+    }
+    }
   //     callback: function(e) {
   //       this.$emit("click", e);
   //     },

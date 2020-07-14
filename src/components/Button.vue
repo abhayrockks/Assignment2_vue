@@ -1,7 +1,5 @@
 <template>
-
-    <child v-on:togglelable="toggleLable($event)" v-on:callback="callback($event)" :label.sync="label"></child>
-
+  <child v-on:togglelable="togglelable()" v-on:callback="callback()" :label.sync="label"></child>
 </template>
 
 <script>
@@ -18,9 +16,9 @@ export default {
   },
 
   methods: {
-    toggleLable: function() {
+    togglelable: function() {
       if (this.label == "Primary") {
-        this.label = this.label.split("") .reverse().join("");
+        this.label = this.label.split("").reverse().join("");
       } else {
         this.label = "Primary";
       }
