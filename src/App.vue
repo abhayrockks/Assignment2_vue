@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-   <Button/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <component1 />
   </div>
 </template>
 
 <script>
-import Button from './components/Parent.vue'
+import component1 from "./components/Component1";
+
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Button
+    component1
   }
-}
+};
 </script>
 
 <style>
