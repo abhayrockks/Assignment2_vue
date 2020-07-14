@@ -1,7 +1,7 @@
 <template>
   <div class="id">
     <base-button v-on:onClick="toggleLable" v-bind:label="label"></base-button>
-    <base-button @onClick="callback" v-bind:label="'Alert'"></base-button>
+    <base-button @onClick="alertcallback" v-bind:label="'Alert'"></base-button>
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
         this.label = "Primary";
       }
     },
-    callback() {
+    alertcallback() {
       alert("Hi");
     }
   }
